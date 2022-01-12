@@ -1,0 +1,148 @@
+html,
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #111e39;
+	color: white;
+	font-family: monospace;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	max-width: 1200px;
+	padding: 100px 20px;
+	margin: 0 auto;
+}
+
+header ul {
+	display: flex;
+	list-style: none;
+	gap: 40px;
+	font-family: monospace;
+}
+
+header a {
+	color: #acbde2;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: #0fc1b7;
+}
+
+.link:after {
+	content: "";
+	position: relative;
+	width: 0;
+	height: 3px;
+	display: block;
+	margin-top: 5px;
+	right: 0;
+	background: #acbde2;
+	transition: width 0.2s ease;
+	-webkit-transition: width 0.2s ease;
+}
+
+.link:hover:after {
+	position: relative;
+	width: 100%;
+	left: 0;
+	background: #acbde2;
+}
+
+.highlight-text {
+	color: #0fc1b7;
+}
+
+.logo {
+	height: auto;
+	min-width: 125px;
+}
+
+.hero {
+	display: flex;
+	padding: 10vh 20px 0 20px;
+	max-width: 1200px;
+	width: 100vw;
+	margin: 0 auto;
+	gap: 75px;
+	flex-grow: 1;
+}
+
+.blocks {
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: 1;
+	width: 50%;
+	min-width: 500px;
+	gap: 20px;
+	height: 30px;
+}
+
+.block {
+	width: 10px;
+	height: 10px;
+	background-color: #0fc1b7;
+}
+
+.content {
+	width: 60%;
+}
+
+.content h1 {
+	font-size: 32px;
+	line-height: 1.5em;
+	flex: 1;
+	padding-top: 50px;
+}
+
+button {
+	padding: 20px 35px;
+	background-color: #0fc1b7;
+	border: none;
+	color: white;
+	border: solid 4px #0fc1b7;
+}
+
+button:hover {
+	background-color: transparent;
+	border: solid 4px #0fc1b7;
+	color: #acbde2;
+}
+
+footer {
+	text-align: center;
+	padding: 30px 0;
+	width: 100vw;
+	margin: 0 auto;
+	color: #acbde2;
+}
+
+@media only screen and (max-width: 960px) {
+	.hero {
+		flex-direction: column;
+		padding: 0 20px;
+		gap: 30px;
+	}
+	.content {
+		width: 100%;
+	}
+	.content h1 {
+		padding-top: 0;
+	}
+	.blocks {
+		height: auto;
+	}
+}

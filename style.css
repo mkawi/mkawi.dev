@@ -1081,7 +1081,7 @@ input[name="toggle"] {
   ------------------------------------------------------------*/
 
 	.ui-section-hero {
-		padding-bottom: 7.5rem;
+		padding-bottom: 10rem;
 		padding-top: 7.5rem;
 	}
 
@@ -1175,7 +1175,11 @@ input[name="toggle"] {
 }
 
 .ui-section-footer__layout svg:hover {
-	opacity: 0.5;
+	stroke: #0fc1b7;
+}
+
+#git-icon:hover {
+	fill: #0fc1b7;
 }
 
 .blocks {
@@ -1192,4 +1196,26 @@ input[name="toggle"] {
 	width: 10px;
 	height: 10px;
 	background-color: #0fc1b7;
+}
+
+@media screen and (max-width: 800px) {
+	.ui-section-footer {
+		position: relative;
+	}
+	.ui-layout-flex,
+	.ui-layout-grid {
+		align-items: normal;
+	}
+	#main-headline {
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.blocks {
+		display: none;
+	}
+	.ui-section-footer__layout a {
+		display: none;
+	}
 }
